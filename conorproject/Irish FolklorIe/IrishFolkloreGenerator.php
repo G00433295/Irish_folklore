@@ -6,10 +6,11 @@
 <body>
 
 <?php
+include 'db_connect.php';
 
 
 
-$conn = new mysqli("conorproject", "root", "", $dbname, port 3306);
+$conn = new mysqli("conorproject", "root", "", "", 3306);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -36,7 +37,7 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 // Connect to the new DB
-$conn = new mysqli("conorproject", "root", "", $dbname,  port 3306);
+$conn = new mysqli("conorproject", "root", "", $dbname, 3306);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
