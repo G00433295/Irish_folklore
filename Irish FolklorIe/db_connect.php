@@ -4,7 +4,7 @@ $servername = "conorproject";  // or "localhost" if you're running WAMP locally
 $username = "root";
 $password = "";
 $dbname = "irish_folklore_db";
-$port = 3306;
+$port = 3304;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname, $port);

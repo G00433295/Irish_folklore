@@ -10,7 +10,7 @@ include 'db_connect.php';
 
 
 
-$conn = new mysqli("conorproject", "root", "", "", 3306);
+$conn = new mysqli("conorproject", "root", "", "", 3304);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

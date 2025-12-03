@@ -14,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
 
 <nav class="navbar">
     <div class="nav-center">
