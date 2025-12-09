@@ -1,9 +1,16 @@
 <?php
+// db_connect.php
+$servername = "conorproject";  // or "localhost" if you're running WAMP locally
+$username = "root";
+$password = "";
+$dbname = "irish_folklore_db";
+$port = 3306;
 
-include 'db_info.php';
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
-$conn = new mysqli($servername, $username, $password, $dbname, port: $port);
-
+// Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
+?>
