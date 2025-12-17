@@ -125,3 +125,15 @@ nav a.active {
 .logout-btn:hover {
     background: rgba(255,255,255,0.35);
 }
+
+/* Register link */
+.register-link {
+  margin-top: 14px;
+  display: block;
+}
+
+/* Make "Register here" show hand cursor */
+#openModal {
+  cursor: pointer;
+}
+
