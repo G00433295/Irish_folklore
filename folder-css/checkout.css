@@ -1,0 +1,226 @@
+/* ================================
+   CHECKOUT PAGE CSS (tidied)
+================================ */
+
+/* Page base */
+.checkout-page {
+  background: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================================
+   NAVBAR (unchanged)
+================================ */
+.navbar {
+  background-color: #0d9e20;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-center ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-center a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-center a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Logout button */
+.logout-btn {
+  position: absolute;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ================================
+   TITLE
+================================ */
+.checkout-title {
+  text-align: center;
+  margin: 35px 0 15px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111;
+}
+
+/* ================================
+   LAYOUT
+================================ */
+.checkout-layout {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* ================================
+   CARDS
+================================ */
+.checkout-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ================================
+   BASKET BOX (smaller version)
+================================ */
+.checkout-basket {
+  max-width: 280px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.checkout-basket h2 {
+  color: #0d9e20;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+/* Basket items */
+#checkout-cart {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+#checkout-cart li {
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+#checkout-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.checkout-basket p {
+  margin: 6px 0;
+}
+
+/* Back to shop link (fixes purple visited) */
+.back-link:link,
+.back-link:visited {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 800;
+  color: #0d9e20;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:active {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* ================================
+   FORM (right side)
+================================ */
+.checkout-form-title {
+  color: #0d9e20;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.checkout-form label {
+  display: block;
+  font-weight: 700;
+  margin: 12px 0 6px;
+  text-align: center;
+}
+
+.checkout-form input {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  font-size: 1rem;
+}
+
+/* Divider line between address and card details */
+.checkout-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 18px 0;
+}
+
+/* Place order button */
+.place-order-btn {
+  width: 100%;
+  max-width: 520px;
+  margin: 18px auto 0;
+  display: block;
+  padding: 12px;
+  background: #0d9e20;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background: #0bb121;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-basket {
+    max-width: 100%;
+  }
+}
